@@ -1,0 +1,86 @@
+
+#slidecont {
+    float: left;
+      width:960px;
+      height: 585px;
+    
+    
+    }
+    
+    #slides {
+        right:0px;
+        z-index:100;
+        margin:0px;
+      padding:10px 23px 0px 0px;
+    }
+    #slides a{
+    text-decoration:none;
+    }
+    /*
+        Slides container
+        Important:
+        Set the width of your slides container
+        Set to display none, prevents content flash
+    */
+    
+    .slides_container {
+      width:960px;
+      height: 585px;
+        overflow:hidden;
+        display:none;
+    
+    }
+    
+    /*
+        Each slide
+        Important:
+        Set the width of your slides
+        If height not specified height will be set by the slide content
+        Set to display block
+    */
+    
+    .slides_container div.slide {
+        width:960px;
+        height:585px;
+        display: block;
+    }
+    
+    
+    /*
+        Pagination
+    */
+    
+    .pagination {
+        margin:0px auto 0;
+        top:200px;
+        right:-10px;
+        width:100px;
+        z-index:12;
+    }
+    
+    .pagination li {
+        float:left;
+        margin:0 1px;
+        list-style:none;
+    }
+    
+    .pagination li a {
+        display:block;
+        width:12px;
+        height:0;
+        padding-top:12px;
+        background-image:url(img/slider/pagination.png);
+        background-position:0 0;
+        float:left;
+        overflow:hidden;
+    }
+    
+    .pagination li.current a {
+        background-position:0 -12px;
+    }
+    
+    
+    
+    
+    
+    
