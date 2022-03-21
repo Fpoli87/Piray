@@ -1,11 +1,6 @@
-.enviar {
-    border-radius: 5px; /* half of button size + padding */
-    -moz-border-radius: 5px;
-    border:1px solid #ccc;
-    padding:4px;
-    width:50px;
-    background-color:#2991ea;
-    font-family: 'Open Sans', sans-serif; 
-    font-size:12px;
-    color:#FFF;
-    margin:10px 0px;
+
+/* Base */ 
+
+@import './base/reset';
+
+@import './layout/header'

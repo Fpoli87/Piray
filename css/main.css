@@ -1,0 +1,134 @@
+/* Base */
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box; }
+
+header .barra {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  margin: 0 0;
+  z-index: 1000; }
+  header .barra a img {
+    display: inline; }
+  header .barra ul {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px; }
+    header .barra ul li {
+      display: inline-block; }
+  header .barra .header__navmenu li {
+    height: 80px; }
+    header .barra .header__navmenu li a {
+      color: #1e858e;
+      font-size: 1.5rem;
+      padding: 7px 13px;
+      text-transform: uppercase;
+      border-right: 5px solid #a6cf35; }
+      header .barra .header__navmenu li a:hover {
+        color: #09df50;
+        transition: 0.5s; }
+
+.active__menu {
+  border-bottom: 5px solid #a6cf35; }
+
+.header__logo {
+  position: absolute; }
+
+#contacto {
+  border-right: none; }
+
+#letra__piray {
+  height: 80px;
+  margin-left: 70px; }
+
+.toggle-button {
+  float: right;
+  line-height: 80px;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none; }
+
+#abrir-cerrar {
+  display: none; }
+
+@media (max-width: 850px) {
+  .toggle-button {
+    display: block; }
+  .header__navmenu {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 80px);
+    background: white;
+    bottom: -100%;
+    text-align: right;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column; }
+  li {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    line-height: 30px; }
+  #inicio, #nosotros, #complejo, #contacto {
+    color: #1e858e;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-right: none; }
+    #inicio:hover, #nosotros:hover, #complejo:hover, #contacto:hover {
+      color: black;
+      transition: 0.5s; }
+  input#abrir-cerrar {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px; }
+  .toggle-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #1e858e;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box; }
+  .toggle-button:before, .toggle-button:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: calc(100% / 2);
+    box-sizing: border-box;
+    left: calc(100% / 4);
+    transition: all 0.2s ease-out; }
+  .toggle-button:before {
+    top: calc(100% / 4);
+    height: calc(100% / 4);
+    border-top: 1px solid #1e858e;
+    border-bottom: 1px solid #1e858e;
+    background-color: transparent; }
+  .toggle-button:after {
+    height: 1px;
+    background-color: #1e858e;
+    bottom: calc(100% / 4); }
+  input#abrir-cerrar:checked + .toggle-button:before, input#abrir-cerrar:checked + .toggle-button:after {
+    top: calc(100% / 2);
+    height: 1px;
+    border-bottom: 0; }
+  input#abrir-cerrar:checked + .toggle-button:before {
+    transform: rotate(45deg); }
+  input#abrir-cerrar:checked + .toggle-button:after {
+    transform: rotate(-45deg); }
+  input#abrir-cerrar:checked ~ .header__navmenu {
+    bottom: -5%; } }
+
+@media (max-width: 460px) {
+  #inicio, #nosotros, #complejo, #contacto {
+    color: #1e858e;
+    font-size: 1rem;
+    text-transform: uppercase; }
+    #inicio:hover, #nosotros:hover, #complejo:hover, #contacto:hover {
+      color: black;
+      transition: 0.5s; }
+  #letra__piray {
+    margin-left: 20px; } }
