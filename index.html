@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
     <title>Piray - Valeria del Mar</title>
@@ -23,16 +24,11 @@
             <nav class="barra">
                 <!-- Barra Navegacion del Menu-->
 
-                <!--<input type="checkbox" name="" id="menu_check">
-                <label for="menu_check" class="nav__checkmenu">
-                    <img src="img/btn-menu.png.png" alt="Boton Menu" class="mr-5">
-                </label>-->
-
                 <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
                 <label for="abrir-cerrar" class="toggle-button"></label>
     
                 <a href="index.html" class="header__logo">
-                    <img src="./img/Logo/LogoMakerCa-1647784133938 (1).png" alt="Piray" class="header__piray ml-5" id="letra__piray">
+                    <img src="./img/Logo/Logo1.png" alt="Piray" class="header__piray ml-5" id="letra__piray">
                 </a>
 
                 <ul class="header__navmenu ">
@@ -40,7 +36,7 @@
                         <a href="index.html" class="header__menu text-decoration-none active__menu" id="inicio">Inicio</a>
                     </li>
                     <li class="header__menu" id="menu2">
-                        <a href="acerca.html" class="header__menu text-decoration-none" id="nosotros">Nosotros</a>
+                        <a href="galeria.html" class="header__menu text-decoration-none" id="nosotros">Nosotros</a>
                     </li>
                     <li class="header__menu" id="menu4">
                         <a href="servicios.html" class="header__menu text-decoration-none" id="complejo">Complejo</a>
@@ -56,49 +52,91 @@
 
     <!--Carousel Inicio-->
     
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/Valeria-del-mar-950x500.jpg" class="d-block w-100" alt="..." ><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita la Playa </h2>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/portada2.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita el Relax </h2>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/portada1.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita Valeria del Mar<br> Vivila en Piray</h2>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="titulo__principal__index">
+
+        <h1 id="tituloindex">Descubri un rincon privado a metros del mar</h1>
+
+        <h2 class="mt-5">Disfruta de un descanso en un ambiente familiar, rodeado de naturaleza en pleno centro de la ciudad.</h2>
+        
+    </section>
+
+    <section>
+
+
+
+    </section>
     
 
     <!--PIE DE PAGINA-->
 
-    <footer class="text-center">
-            
-        <div class="container p-4">
-    
-            <section class="mb-4">
-            
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://www.facebook.com/" role="button" target="blank">
-                    <i class="fab fa-facebook-f fa-xl facebook">Facebook</i>
-                </a>
-            
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://twitter.com/?lang=es" role="button" target="blank">
-                    <i class="fab fa-twitter fa-xl twitter">Twitter</i>
-                </a>
-            
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/?hl=es-la" role="button" target="blank">
-                    <i class="fab fa-instagram fa-xl instagram">Instagram</i>
-                </a>
-        
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://ar.linkedin.com/" role="button" target="blank">
-                    <i class="fab fa-linkedin-in fa-xl linkedin">Linkedin</i>
-                </a>
-            
-            </section>
-        
-            <section class="mb-1">
-                <h5 class="text-uppercase fw-bold">Contacto</h5>
-                <p><i class="fas fa-home mr-3"></i> CABA, Buenos Aires, Argentina</p>
-                <p><i class="fas fa-envelope mr-3"></i> contacto@soter.com.ar</p>
-                <p><i class="fas fa-phone mr-3"></i> +54 9 11 2024 3550</p>
-                <p><i class="fa-brands fa-whatsapp mr-3 fa-xl"></i> +54 9 11 2024 3549</p>
-            </section>
-        
-        </div>
-    
-        <div class="bg-secondary text-center p-2 derechos" id="zocalo">
-            Todos los derechos reservados @ Piray - Valeria Del Mar
-        </div>
-    
-    </footer>
+    <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+        <footer>
+            <div class="row my-5 justify-content-center py-5">
+                <div class="col-11">
+                    <div class="row ">
+                        <div class="col-xl-8 col-lg-4 col-md-4 col-sm-8 col-12 my-auto mx-auto a">
+                            <h3 class="text-muted mb-md-0 mb-5 bold-text"><img src="./img/Logo/Logo1.png" height="300px" width="300px"></h3>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-2 col-12">
+                            <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                            <ul class="list-unstyled">
+                                <li>Inicio</li>
+                                <li>Complejo</li>
+                                <li>Apartments</li>
+                                <li>Contacto</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-2 col-12">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>DIRECCIÓN</b></h6>
+                            <p class="mb-1">HUBAC 382</p>
+                            <p>Valeria Del Mar</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                            <p class="social text-muted mb-0 pb-0 bold-text "> <span class="mx-2"><i class="fa-brands fa-facebook fa-2xl" aria-hidden="true" id="facebook"></i></span> <span class="mx-2"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true" id="instagram"></i></span> </p><h4 class="rights mt-3"> PIRAY All Rights Reserved.</h4>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                            <h6 class="mt-55 mt-2 text-muted bold-text"><b>Linea Telefonica</b></h6><small> <span><i class="fa-solid fa-phone" aria-hidden="true"></i></span> 15-7369-9066</small>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                            <h6 class="text-muted bold-text"><b>Nuestro Mail</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> infopiray@gmail.com</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 
 

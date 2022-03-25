@@ -1,0 +1,23 @@
+
+.carousel-item {
+    position: relative;
+    text-align: center;
+}
+
+.texto__carousel {
+    color: #1e858e;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#tituloindex {
+
+    text-transform: uppercase;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: right;
+    
+}
