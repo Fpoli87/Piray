@@ -26,23 +26,22 @@
 
                 <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
                 <label for="abrir-cerrar" class="toggle-button"></label>
-    
-                <a href="index.html" class="header__logo">
-                    <img src="./img/Logo/Logo1.png" alt="Piray" class="header__piray ml-5" id="letra__piray">
-                </a>
 
                 <ul class="header__navmenu ">
                     <li class="header__menu " id="menu1">
-                        <a href="index.html" class="header__menu text-decoration-none active__menu" id="inicio">Inicio</a>
+                        <a href="./index.html" class="header__menu text-decoration-none active__menu" id="inicio">Inicio</a>
                     </li>
                     <li class="header__menu" id="menu2">
-                        <a href="galeria.html" class="header__menu text-decoration-none" id="nosotros">Nosotros</a>
+                        <a href="./aparts.html" class="header__menu text-decoration-none" id="nosotros">Nosotros</a>
                     </li>
+                    
+                    <img src="./img/Logo/loto-solo - copia.png" alt="Piray" height="" class="header__piray ml-5" id="letra__piray">
+                    
                     <li class="header__menu" id="menu4">
-                        <a href="servicios.html" class="header__menu text-decoration-none" id="complejo">Complejo</a>
+                        <a href="./complejo.html" class="header__menu text-decoration-none" id="complejo">Complejo</a>
                     </li>
                     <li class="header__menu" id="menu5">
-                        <a href="contacto.html" class="header-menu text-decoration-none" id="contacto">Contactanos</a>
+                        <a href="#contact" class="header-menu text-decoration-none" id="contacto">Contactanos</a>
                     </li>
                 </ul>
             </nav>
@@ -53,21 +52,25 @@
     <!--Carousel Inicio-->
     
     <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/Valeria-del-mar-950x500.jpg" class="d-block w-100" alt="..." ><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita la Playa </h2>
+                <div class="carousel-item active data-bs-interval="400"">
+                    <img src="./img/playa.jpg" class="d-block w-100" alt="..." ><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita la Playa </h2>
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/portada2.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita el Relax </h2>
+                <div class="carousel-item data-bs-interval="400"">
+                    <img src="./img/granangularexterior.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita el Relax </h2>
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/portada1.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita Valeria del Mar<br> Vivila en Piray</h2>
+                <div class="carousel-item data-bs-interval="400"">
+                    <img src="./img/naturalezajardin.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita la Naturaleza</h2>
+                </div>
+                <div class="carousel-item data-bs-interval="400"">
+                  <img src="./img/portada1.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita Valeria del Mar<br> Vivila en Piray</h2>
                 </div>
             </div>
             
@@ -96,50 +99,93 @@
 
     </section>
     
-
-    <!--PIE DE PAGINA-->
-
-    <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
-        <footer>
-            <div class="row my-5 justify-content-center py-5">
-                <div class="col-11">
-                    <div class="row ">
-                        <div class="col-xl-8 col-lg-4 col-md-4 col-sm-8 col-12 my-auto mx-auto a">
-                            <h3 class="text-muted mb-md-0 mb-5 bold-text"><img src="./img/Logo/Logo1.png" height="300px" width="300px"></h3>
-                        </div>
-                        <div class="col-xl-2 col-md-4 col-sm-2 col-12">
-                            <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
-                            <ul class="list-unstyled">
-                                <li>Inicio</li>
-                                <li>Complejo</li>
-                                <li>Apartments</li>
-                                <li>Contacto</li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-2 col-md-4 col-sm-2 col-12">
-                            <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>DIRECCIÓN</b></h6>
-                            <p class="mb-1">HUBAC 382</p>
-                            <p>Valeria Del Mar</p>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
-                            <p class="social text-muted mb-0 pb-0 bold-text "> <span class="mx-2"><i class="fa-brands fa-facebook fa-2xl" aria-hidden="true" id="facebook"></i></span> <span class="mx-2"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true" id="instagram"></i></span> </p><h4 class="rights mt-3"> PIRAY All Rights Reserved.</h4>
-                        </div>
-                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
-                            <h6 class="mt-55 mt-2 text-muted bold-text"><b>Linea Telefonica</b></h6><small> <span><i class="fa-solid fa-phone" aria-hidden="true"></i></span> 15-7369-9066</small>
-                        </div>
-                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
-                            <h6 class="text-muted bold-text"><b>Nuestro Mail</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> infopiray@gmail.com</small>
-                        </div>
-                    </div>
+    <section id="contact" class="add-padding border-top-color2" >
+        <br>
+        <br>
+            <div class="container text-center">
+              
+              <div class="row">
+              
+                <div class="col-sm-12 col-md-12 col-lg-6 text-right scrollimation fade-up d1 mb-3">
+                
+                  <h1 class="big-text">Contacta con Nosotros</h1>
+                  
+                  <p class="lead">PIRAY<br>- Valeria del Mar -</p>
+      
+                  <p>Dirección - Hubac 382</p>
+      
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12721.113603063706!2d-56.8823314!3d-37.1460792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x795723196ff90c50!2sCaba%C3%B1as%20PIRAY!5e0!3m2!1ses-419!2sar!4v1648335008735!5m2!1ses-419!2sar" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
                 </div>
+                <br>
+              
+                <!--=== Contact Form ===-->
+      
+                <form id="contact-form" class="col-sm-12 col-md-12 col-lg-6 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
+                  
+                  <div class="form-group">
+                    <label class="control-label" for="contact-name">Nombre</label>
+                    <div class="controls">
+                    <input id="contact-name" name="contactName" placeholder="Nombre" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Por favor ingrese su nombre">
+                    <i class="fa fa-user mt-3"></i>
+                    </div>
+                  </div><!-- End name input -->
+                  
+                  <div class="form-group">
+                    <label class="control-label" for="contact-mail">Email</label>
+                    <div class=" controls">
+                        <input id="contact-mail" name="email" placeholder="Email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Por favor ingrese su dirección de email" data-error-invalid="Direccion Email incorrecta">
+                        <i class="fa fa-envelope mt-3"></i>
+                    </div>
+                  </div><!-- End email input -->
+                  
+                  <div class="form-group">
+                    <label class="control-label" for="contact-message">Mensaje</label>
+                    <div class="controls">
+                      <textarea id="contact-message" name="comments"  placeholder="Mensaje" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Por favor ingrese su mensaje"></textarea>
+                      <i class="fa fa-comment mt-3"></i>
+                    </div>
+                  </div><!-- End textarea -->
+                  
+                  <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Enviando..." data-ok-message="Message Enviado"><i class="fa fa-paper-plane"></i> Enviar Mensaje</button></p>
+                  <input type="hidden" name="submitted" id="submitted" value="true" />
+                  
+                </form><!-- End contact-form -->
+                
+              </div>
+              
             </div>
-        </footer>
-    </div>
-
-
-
+          
+          </section>
+          
+          <!-- ==============================================
+          Pie De Pagina
+          =============================================== --> 
+          
+          <footer id="main-footer" class=" border-top-color2">
+    
+            <div class="row">
+                <ul class=" text-center aparts">
+                    <li><a href="./Studio.html">Studio</i></a></li>
+                    <li><a href="./Suite.html" >Suite</a></li>
+                    <li><a href="./duplex.html" >Duplex</a></li>
+                  </ul>
+            </div>
+          
+            <div class="container">
+      
+              <p>VISITE NUESTRAS REDES</p><br>
+            
+              <ul class="social-links text-center">
+                <li><a href="https://facebook" target="_blank" id="facebook"><i class="fa-brands fa-facebook-square fa-fw"></i></a></li>
+                <li><a href="https://instagram" target="_blank" id="instagram"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
+              </ul>
+            
+              <p class="text-center">&copy; 2022 - PIRAY Valeria del Mar</p>
+            
+            </div>
+            
+          </footer>
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/fontawesome-all.min.js"></script>

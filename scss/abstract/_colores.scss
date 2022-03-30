@@ -2,18 +2,28 @@
 
 /* Header */
 $fondoprimario: white;
-$letrasmenu: #1e858e;
-$separadormenu: #a6cf35;
-$menuactive: #a6cf35;
-$hovermenu: rgb(9, 223, 80);
+$letrasmenu: white;
+$separadormenu: #cf74f0;
+$menuactive: #6f22d6;
+$hovermenu: #6f22d6;
 
 /* Body */
-$fondobody: white;
-$clrletrabody: black;
+$fondobody:white;
+$clrletrabody: #6f22d6;
+$fondobody2: linear-gradient(black, rgb(59, 6, 83));
+$fondobody3: linear-gradient(rgb(11, 1, 15), rgb(63, 6, 90));
 
+/* Formulario */
+
+$clrseparador: #cf74f0;
+$clrbotonenviar: #1e858e;
+$clrenlace: #1e858e;
+$bordeactivo: #cf74f0;
 
 /* Footer */
 $fondofooter: white;
 $letrafooter: #1e858e;
-$separadorfooter: #1e858e;
-$hoversocialfooter: #1e858e;
+$separadorfooter: #cf74f0;
+$clrsocialimg:white;
+$clrsocialfooter:#6f22d6;
+$hoversocialfooter: #3f08ae;

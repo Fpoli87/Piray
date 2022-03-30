@@ -2,6 +2,10 @@
 .carousel-item {
     position: relative;
     text-align: center;
+
+    img {
+        height: 400px;
+    }
 }
 
 .texto__carousel {
@@ -20,4 +24,8 @@
     text-shadow: black 0.1em 0.1em 0.2em;
     text-align: right;
     
+}
+
+.titulo__principal__index {
+    position: relative;
 }

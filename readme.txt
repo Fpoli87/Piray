@@ -12,3 +12,10 @@ Nuevo footer
 Carrousel con fotos
 Limpieza de archivos
 Galerias
+
+--------  Version 0.4  --------
+
+Footer con formulario
+Nuevo Navbar
+Nuevos colores
+Nuevo fondo
