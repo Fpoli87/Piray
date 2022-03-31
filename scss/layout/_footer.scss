@@ -238,6 +238,7 @@
       background: $fondofooter;
       padding-top: 30px;
       position: relative;
+      font-family: Arial, Helvetica, sans-serif;
   }
   
   #main-footer p a {
@@ -269,10 +270,10 @@
   .social-links li a {
       display:block;
       color:$clrsocialimg;
-      font-size:21px;
-      width:50px;
-      height:50px;
-      line-height:50px;
+      font-size:2.5rem;
+      width:80px;
+      height:80px;
+      line-height:80px;
       text-align:center;
       background:$clrsocialfooter;
       

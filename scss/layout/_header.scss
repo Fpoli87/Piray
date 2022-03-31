@@ -7,7 +7,8 @@ header {
         position: fixed;
         margin: 0 0;
         top: 0;
-        z-index: 1000;
+        z-index: 99999;
+        text-align: center;
         
 
         a {
@@ -33,10 +34,11 @@ header {
             
                 a {
                     color: $letrasmenu;
-                    font-size: 1.5rem;
+                    font-size: 3rem;
                     padding: 7px 13px;
+                    font-family: 'Imperial Script', cursive;
                     
-                    text-transform: uppercase;
+                    
                     border-right: 3px solid $separadormenu;
         
                     &:hover {
@@ -54,7 +56,7 @@ header {
     border-bottom: 3px solid $menuactive;
 }
 
-#contacto, #nosotros {
+#contacto, #complejo {
     border-right: none;
 }
 
@@ -110,10 +112,10 @@ header {
     }
 
     #inicio, #nosotros, #complejo, #contacto {
-        color: #1e858e;
-        font-size: 1.2rem;
+        color: black;
+        font-size: 2rem;
         
-        text-transform: uppercase;
+        
         border-right: none;
     
         &:hover {

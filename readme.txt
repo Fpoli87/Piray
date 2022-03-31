@@ -19,3 +19,10 @@ Footer con formulario
 Nuevo Navbar
 Nuevos colores
 Nuevo fondo
+
+--------  Version 0.5  --------
+
+Nuevo index con card
+Letras en Navbar 
+Organizacion Apart.html
+Fotos en Galerias

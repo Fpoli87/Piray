@@ -15,7 +15,8 @@ header .barra {
   position: fixed;
   margin: 0 0;
   top: 0;
-  z-index: 1000; }
+  z-index: 99999;
+  text-align: center; }
   header .barra a img {
     display: inline; }
   header .barra ul {
@@ -26,9 +27,9 @@ header .barra {
     height: 80px; }
     header .barra .header__navmenu li a {
       color: white;
-      font-size: 1.5rem;
+      font-size: 3rem;
       padding: 7px 13px;
-      text-transform: uppercase;
+      font-family: 'Imperial Script', cursive;
       border-right: 3px solid #cf74f0; }
       header .barra .header__navmenu li a:hover {
         color: #6f22d6;
@@ -37,7 +38,7 @@ header .barra {
 .active__menu {
   border-bottom: 3px solid #6f22d6; }
 
-#contacto, #nosotros {
+#contacto, #complejo {
   border-right: none; }
 
 #letra__piray {
@@ -78,9 +79,8 @@ header .barra {
     margin: 10px 0;
     line-height: 30px; }
   #inicio, #nosotros, #complejo, #contacto {
-    color: #1e858e;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+    color: black;
+    font-size: 2rem;
     border-right: none; }
     #inicio:hover, #nosotros:hover, #complejo:hover, #contacto:hover {
       color: black;
@@ -142,25 +142,15 @@ header .barra {
     margin-left: 20px; } }
 
 section {
-  margin-top: 80px; }
+  margin-top: 50px; }
 
 h1 {
   font-size: 4rem; }
 
 body {
-  position: relative; }
-  body::before {
-    content: "";
-    width: 100%;
-    min-height: 100%;
-    position: absolute;
-    background-image: url("../../img/entradadia.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    opacity: 0.5; }
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  background: white; }
 
 /*-----------------------
 ----- Basic Styles -----
@@ -358,7 +348,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #main-footer {
   background: white;
   padding-top: 30px;
-  position: relative; }
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif; }
 
 #main-footer p a {
   padding-bottom: 40px;
@@ -385,10 +376,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .social-links li a {
   display: block;
   color: white;
-  font-size: 21px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  font-size: 2.5rem;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
   text-align: center;
   background: #6f22d6;
   -webkit-transition: all .3s ease-out;
@@ -411,21 +402,78 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     height: 400px; }
 
 .texto__carousel {
-  color: #1e858e;
-  font-size: 4rem;
+  color: white;
+  font-size: 5rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
   transform: translate(-50%, -50%);
   text-shadow: black 0.1em 0.1em 0.2em; }
 
 #tituloindex {
   text-transform: uppercase;
   text-shadow: black 0.1em 0.1em 0.2em;
-  text-align: right; }
+  text-align: right;
+  margin-right: 20px; }
 
 .titulo__principal__index {
-  position: relative; }
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px; }
+  .titulo__principal__index::before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    width: 60%;
+    border-bottom: 1px solid #cf74f0; }
+
+.logo__inicio {
+  height: 250px;
+  width: 250px; }
+
+.titulo__index {
+  font-size: 1.5rem;
+  line-height: 1.5; }
+
+.titulo__aparts {
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center; }
+  .titulo__aparts .index__aparts {
+    height: auto; }
+    .titulo__aparts .index__aparts .index__apart2 {
+      margin: 5px 5px;
+      padding: 5px 5px;
+      box-sizing: border-box; }
+  .titulo__aparts .index__aparts__texto {
+    border: 2px solid black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
+
+.index__titulo__aparts {
+  font-size: 3rem;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.card-title {
+  font-size: 2.5rem !important;
+  text-transform: uppercase;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.card-text {
+  font-size: 1.5rem !important;
+  text-shadow: black 0.1em 0.1em 0.2em; }
 
 img {
   width: 100%;
@@ -540,7 +588,7 @@ img {
   flex-shrink: 2; }
 
 .imagen img {
-  width: 800px;
+  width: auto;
   height: 100%;
   max-width: 100%;
   border: 7px solid #fff;
@@ -559,3 +607,19 @@ img {
   padding: 5px;
   border-radius: 50%;
   line-height: 15px; }
+
+.texto__complejo {
+  position: relative;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px; }
+
+.servicios__aparts__general {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  border: 2px solid black;
+  margin: 20px 20px; }
