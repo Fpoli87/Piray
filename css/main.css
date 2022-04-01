@@ -16,7 +16,8 @@ header .barra {
   margin: 0 0;
   top: 0;
   z-index: 99999;
-  text-align: center; }
+  text-align: center;
+  opacity: 1; }
   header .barra a img {
     display: inline; }
   header .barra ul {
@@ -30,6 +31,7 @@ header .barra {
       font-size: 3rem;
       padding: 7px 13px;
       font-family: 'Imperial Script', cursive;
+      opacity: 1;
       border-right: 3px solid #cf74f0; }
       header .barra .header__navmenu li a:hover {
         color: #6f22d6;
@@ -142,12 +144,13 @@ header .barra {
     margin-left: 20px; } }
 
 section {
-  margin-top: 50px; }
+  margin-top: 80px; }
 
 h1 {
   font-size: 4rem; }
 
 body {
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   background: white; }
@@ -395,11 +398,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 0 20px;
   text-transform: uppercase; }
 
+body::-webkit-scrollbar {
+  width: 9px; }
+
+body::-webkit-scrollbar-thumb {
+  background: #cf74f0;
+  border-radius: 5px;
+  border-right: 2px solid white;
+  border-left: 2px solid white; }
+
+.seccion__inicio {
+  margin-top: 50px; }
+
 .carousel-item {
   position: relative;
   text-align: center; }
   .carousel-item img {
-    height: 400px; }
+    height: 450px;
+    top: 0; }
 
 .texto__carousel {
   color: white;
@@ -415,6 +431,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-shadow: black 0.1em 0.1em 0.2em;
   text-align: right;
   margin-right: 20px; }
+
+#imglogoloto {
+  height: 480px;
+  width: auto; }
 
 .titulo__principal__index {
   position: relative;
@@ -435,6 +455,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .titulo__index {
   font-size: 1.5rem;
   line-height: 1.5; }
+
+.services-svg {
+  height: auto;
+  width: 50px; }
 
 .titulo__aparts {
   display: flex;
@@ -474,6 +498,45 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .card-text {
   font-size: 1.5rem !important;
   text-shadow: black 0.1em 0.1em 0.2em; }
+
+@media (max-width: 1248px) {
+  .texto__carousel {
+    font-size: 4.5rem; } }
+
+@media (max-width: 1190px) {
+  #imglogoloto {
+    height: 400px;
+    width: auto; } }
+
+@media (max-width: 992px) {
+  #imglogoloto {
+    height: 480px;
+    width: auto; } }
+
+@media (max-width: 758px) {
+  .texto__carousel {
+    font-size: 4rem; }
+  #imglogoloto {
+    height: 400px;
+    width: auto; } }
+
+@media (max-width: 674px) {
+  .texto__carousel {
+    font-size: 3.8rem; } }
+
+@media (max-width: 641px) {
+  .texto__carousel {
+    font-size: 3.4rem; } }
+
+@media (max-width: 521px) {
+  .texto__carousel {
+    font-size: 3rem; } }
+
+@media (max-width: 460px) {
+  .texto__carousel {
+    font-size: 2.5rem; }
+  #tituloindex {
+    font-size: 3rem; } }
 
 img {
   width: 100%;

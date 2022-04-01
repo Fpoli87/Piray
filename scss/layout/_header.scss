@@ -9,6 +9,7 @@ header {
         top: 0;
         z-index: 99999;
         text-align: center;
+        opacity: 1;
         
 
         a {
@@ -37,7 +38,7 @@ header {
                     font-size: 3rem;
                     padding: 7px 13px;
                     font-family: 'Imperial Script', cursive;
-                    
+                    opacity: 1;
                     
                     border-right: 3px solid $separadormenu;
         

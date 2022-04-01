@@ -26,3 +26,8 @@ Nuevo index con card
 Letras en Navbar 
 Organizacion Apart.html
 Fotos en Galerias
+
+--------  Version 0.6  --------
+
+Correcciones mobile
+Nuevo index.html

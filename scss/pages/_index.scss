@@ -1,10 +1,14 @@
 
+.seccion__inicio {
+    margin-top: 50px;
+}
 .carousel-item {
     position: relative;
     text-align: center;
 
     img {
-        height: 400px;
+        height: 450px;
+        top: 0;
     }
 }
 
@@ -25,6 +29,11 @@
     text-align: right;
     margin-right: 20px;
     
+}
+
+#imglogoloto {
+    height: 480px;
+    width: auto;
 }
 
 .titulo__principal__index {
@@ -54,6 +63,11 @@
     font-size: 1.5rem;
     line-height: 1.5;
 
+}
+
+.services-svg {
+    height: auto;
+    width: 50px;
 }
 
 .titulo__aparts {
@@ -108,4 +122,63 @@
 .card-text {
     font-size: 1.5rem !important;
     text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+@media (max-width: 1248px) {
+    .texto__carousel {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 1190px) {
+    #imglogoloto {
+        height: 400px;
+        width: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    #imglogoloto {
+        height: 480px;
+        width: auto;
+    }
+}
+
+@media (max-width: 758px) {
+    .texto__carousel {
+        font-size: 4rem;
+    }
+
+    #imglogoloto {
+        height: 400px;
+        width: auto;
+    }
+}
+
+@media (max-width: 674px) {
+    .texto__carousel {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 641px) {
+    .texto__carousel {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 521px) {
+    .texto__carousel {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .texto__carousel {
+        font-size: 2.5rem;
+    }
+
+    #tituloindex {
+        font-size: 3rem;
+    }
 }

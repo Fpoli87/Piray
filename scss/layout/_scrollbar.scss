@@ -1,0 +1,12 @@
+
+body::-webkit-scrollbar {
+    width: 9px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $separadormenu;
+    border-radius: 5px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}

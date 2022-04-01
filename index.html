@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Piray valeria del Mar, Complejo de descanso a metros del mar">
-    <meta name="keywords" content=""/>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Piray valeria del Mar, Complejo de descanso a metros del mar">
+      <meta name="keywords" content=""/>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/fontawesome-all.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="shortcut icon" href="favicon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="lotus.png">
 
+      <title>Piray - Valeria del Mar</title>
+  </head>
+  <body>
 
-    <title>Piray - Valeria del Mar</title>
-</head>
-<body>
-    
     <header>
         <div class="header__contenedor">
                 
-            <nav class="barra">
+            <nav class="barra ">
                 <!-- Barra Navegacion del Menu-->
 
                 <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
@@ -54,7 +54,7 @@
 
     <!--Carousel Inicio-->
     
-    <section>
+    <section class="seccion__inicio">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -64,16 +64,16 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active data-bs-interval="400"">
-                    <img src="./img/playa.jpg" class="d-block w-100" alt="..." ><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita la Playa </h2>
+                    <img src="./img/playa.jpg" class="d-block " alt="..." ><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita la Playa </h2>
                 </div>
                 <div class="carousel-item data-bs-interval="400"">
-                    <img src="./img/granangularexterior.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita el Relax </h2>
+                    <img src="./img/granangularexterior.jpg" class="d-block " alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita el Relax </h2>
                 </div>
                 <div class="carousel-item data-bs-interval="400"">
-                    <img src="./img/naturalezajardin.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita la Naturaleza</h2>
+                    <img src="./img/naturalezajardin.jpg" class="d-block " alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita la Naturaleza</h2>
                 </div>
                 <div class="carousel-item data-bs-interval="400"">
-                  <img src="./img/portada1.jpg" class="d-block w-100" alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita Valeria del Mar<br> Vivila en Piray</h2>
+                  <img src="./img/portada1.jpg" class="d-block " alt="..."><h2 class="texto__carousel animate__animated animate__fadeInLeft">Visita Valeria del Mar<br> Vivila en Piray</h2>
                 </div>
             </div>
             
@@ -88,17 +88,115 @@
         </div>
     </section>
 
+    <!-- Fin Carousel Inicio-->
+
+    <!--Acerca Inicio-->
+
+    
+
+    
+
     <section class="titulo__principal__index">
 
-        <h1 id="tituloindex">Descubri un rincon privado a metros del mar</h1>
+        <div class="container" id="about">
+          <div class="row align-items-center">
+              <div class="col-12 col-lg-6">
+                  <div class="section-about">
+                      <h6>Sobre Nosotros</h6>
+                      <h1 id="tituloindex" >Bienvenidos a <br>PIRAY</h1>
+                  </div>
+                  <div class="mb-100">
+                      <h4>Un lugar de tranquilidad y confort te esperan!</h4>
+                      <h5 id="about-text" class="">Ubicados a una cuadra y media del mar y dos cuadras del centro
+                        comercial, te ofrecemos todo lo necesario para disfrutar de una
+                        grata estadia cerca del mar</h5>
+                  </div>
+              </div>
 
-        <h2 class="mt-5">Disfruta de un descanso en un ambiente familiar, rodeado de naturaleza en pleno centro de la ciudad.</h2>
+              <div class="col-12 col-lg-6">
+                  <div class="about-us-thumbnail mb-100">
+                      <div class="row no-gutters">
+                          
+                          <div class="col-12">
+                              <div class="single-thumb justify-content-center">
+                                  <img src="./img/Logo/loto.png" alt="" id="imglogoloto">
+                              </div>
+                          </div>
 
-        <img src="./img/Logo/loto.png" alt="logo" class="logo__inicio">
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
 
-        <p class="titulo__index">Ubicados a sólo 150 mts de la playa y 200 mts del centro comercial</p>
-        
     </section>
+
+    <!--Fin Acerca Inicio-->
+
+    <!--Servicios Inicio-->
+
+    <h2 class="text-center index__titulo__aparts">Nuestros Servicios</h2>
+
+    <section class="titulo__principal__index text-center">
+            
+        <div class="container">
+            <div id="services-items" class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img class="services-svg" src="./img/Logo/iconos/008-wifi.png" alt="">
+                        <h4>Wi-Fi Gratis</h4>
+                        <p class="services-text">Disfrute de conexion de internet de alta velocidad en todo el complejo para que conecte todos sus dispositivos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div>                    
+                        <img class="services-svg" src="./img/Logo/iconos/006-swimming-pool.png" alt="">
+                        <h4>Piscina Climatizada</h4>
+                        <p class="services-text">Con un amplio horario de uso tendrá a su disposición la piscina climatizada</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img class="services-svg" src="./img/Logo/iconos/004-towels.png" alt="">
+                        <h4>Servicio de Ropa Blanca</h4>
+                        <p class="services-text">Servicio de limpieza y recambio de ropa blanca para cada una de las unidades</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img class="services-svg" src="./img/Logo/iconos/014-playground.png" alt="">
+                        <h4>Juegos para Niños</h4>
+                        <p class="services-text">Los niños dispondran de un espacio verde con juegos de madera para que diviertan al aire libre</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img class="services-svg" src="./img/Logo/iconos/009-smart-tv.png" alt="">
+                        <h4>TV HD</h4>
+                        <p class="services-text">Todos los departamentos estan equipados con TV 50' para el uso de los huespedes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img class="services-svg" src="./img/Logo/iconos/005-security-camera.png" alt="">
+                        <h4>Vigilancia</h4>
+                        <p class="services-text">Vigilancia en todo el complejo para que sólo se preocupe en disfrutar y relajarse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <!--Fin Servicios Inicio-->
+
+    <!--Cuartos Inicio-->
+    </section>
+
+    <sectio class="titulo__principal__index text-center">
+
+        
+
+    </sectio>
 
     <h2 class="text-center index__titulo__aparts">Conozca Nuestros Departamentos</h2>
 
@@ -191,11 +289,16 @@
 
     </section>
 
+    <!--Fin Cuartos Inicio-->
+
+    
     <section>
 
 
 
     </section>
+
+    <!--Form Inicio-->
     
     <section id="contact" class="add-padding border-top-color2" >
         <br>
@@ -255,6 +358,8 @@
             </div>
           
           </section>
+
+          <!--Fin Form Inicio-->
           
           <!-- ==============================================
           Pie De Pagina
@@ -287,5 +392,6 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/fontawesome-all.min.js"></script>
-</body>
+    <script src="js/navbar.js"></script>
+  </body>
 </html>
