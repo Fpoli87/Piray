@@ -48,15 +48,68 @@
         
         bottom: 0;
         width: 60%;
+    }
+}
+
+.titulo__principal__index--borde {
+    position: relative;
+    
+    text-align: center;
+    margin-bottom: 20px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 20%;
+        
+        bottom: 0;
+        width: 60%;
         
         border-bottom: 1px solid $clrseparador;
     }
+}
+
+.btn__index__servicios {
+    left: 20%;
+    line-height: 1.2rem;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 10px;    
+    width: 60%;
+    background: $clrbtn !important;
+    text-decoration: none;
+
+    &:hover {
+        background: $colorbtnhover !important;
+        color: $clrbtntxthover;
+        transition: 1s ease;
+    }
+}
+
+.seccion__servicios__blanco {
+    padding-top: 30px;
+    margin-top: 10px;
+    color: $clrtxtserv;
 }
 
 .logo__inicio {
    
     height: 250px;
     width: 250px;
+}
+
+.seccion__index__servicios {
+    padding-top: 30px;
+    margin-top: 10px;
+    color: $clrtxtserv2;
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+}
+
+.index__subtitulo {
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 1.8rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    
 }
 
 .titulo__index {
@@ -76,6 +129,7 @@
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 30px;
     justify-content: center;
     
     .index__aparts {
@@ -104,13 +158,28 @@
         left: 0;
         top: 0;
     }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 20%;
+        
+        bottom: 0;
+        width: 60%;
+        
+        border-bottom: 1px solid $clrseparador;
+    }
 }
 
 .index__titulo__aparts {
     font-size: 3rem;
     text-shadow: black 0.1em 0.1em 0.2em;
-    
+    margin-bottom: 20px;
+}
 
+.index__titulo__aparts--grande {
+    font-size: 4rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .card-title {

@@ -31,3 +31,7 @@ Fotos en Galerias
 
 Correcciones mobile
 Nuevo index.html
+
+--------  Version 0.7  --------
+
+Nuevas secciones servicios

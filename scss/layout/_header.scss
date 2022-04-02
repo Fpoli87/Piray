@@ -53,9 +53,7 @@ header {
     }
 }
 
-.active__menu {
-    border-bottom: 3px solid $menuactive;
-}
+
 
 #contacto, #complejo {
     border-right: none;
@@ -112,9 +110,13 @@ header {
         line-height: 30px;
     }
 
+    .active__menu {
+        border-bottom: 3px solid $menuactive;
+    }
+
     #inicio, #nosotros, #complejo, #contacto {
-        color: black;
-        font-size: 2rem;
+        color: $letramenumobile;
+        font-size: 2.5rem;
         
         
         border-right: none;
@@ -136,7 +138,7 @@ header {
         display:block;
         width:50px;
         height:50px;
-        border:1px solid #1e858e;
+        border:1px solid $letrasmenu;
         position:relative;
         cursor: pointer;
         box-sizing: border-box;
@@ -155,14 +157,14 @@ header {
     .toggle-button:before {
         top: calc(100% / 4);
         height:calc(100% / 4);
-        border-top:1px solid #1e858e;
-        border-bottom:1px solid #1e858e;
+        border-top:1px solid $letrasmenu;
+        border-bottom:1px solid $letrasmenu;
         background-color: transparent;
     }
 
     .toggle-button:after {
         height:1px;
-        background-color:#1e858e;
+        background-color:$letrasmenu;
         bottom:calc(100% / 4);
     }
 
@@ -194,18 +196,22 @@ header {
 
 @media (max-width: 460px) {
 
-    #inicio, #nosotros, #complejo, #contacto {
-        color: #1e858e;
-        font-size: 1rem;
-        text-transform: uppercase;
-    
-        &:hover {
-            color: black;
-            transition: 0.5s;
-        }
-    }
-
     #letra__piray {
         margin-left: 20px;
     }
+}
+
+@media (max-width: 460px) {
+
+    .header__navmenu {
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 50px);
+        background: white;
+        bottom: -100%;
+        text-align: right;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+        }
 }
