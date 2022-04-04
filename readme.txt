@@ -35,3 +35,8 @@ Nuevo index.html
 --------  Version 0.7  --------
 
 Nuevas secciones servicios
+
+--------  Version 0.8  --------
+
+Nuevo estilo de servicios
+Correccion formatos mobile

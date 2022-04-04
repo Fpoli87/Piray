@@ -7,9 +7,9 @@ header {
         position: fixed;
         margin: 0 0;
         top: 0;
-        z-index: 99999;
+        z-index: 9999;
         text-align: center;
-        opacity: 1;
+        overflow: visible !important;
         
 
         a {
@@ -20,6 +20,7 @@ header {
         }
         ul {
             text-align: center;
+            margin-top: 15px;
             
             
             li {
@@ -59,6 +60,10 @@ header {
     border-right: none;
 }
 
+.contenedor-imagen-nav {
+    position: relative;
+}
+
 #letra__piray {
     height: 120px;
     width: 120px;
@@ -66,6 +71,9 @@ header {
     margin-bottom: 20px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
+    position: relative;
+    z-index: 99999;
+    
 }
 
 
@@ -199,6 +207,10 @@ header {
     #letra__piray {
         margin-left: 20px;
     }
+
+    input#abrir-cerrar:checked ~ .header__navmenu {
+        bottom: -9%;
+        }
 }
 
 @media (max-width: 460px) {

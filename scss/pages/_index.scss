@@ -100,6 +100,7 @@
 .seccion__index__servicios {
     padding-top: 30px;
     margin-top: 10px;
+    width: 100vw;
     color: $clrtxtserv2;
     background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
 }
@@ -118,10 +119,7 @@
 
 }
 
-.services-svg {
-    height: auto;
-    width: 50px;
-}
+
 
 .titulo__aparts {
 
@@ -180,6 +178,7 @@
 .index__titulo__aparts--grande {
     font-size: 4rem;
     text-shadow: black 0.1em 0.1em 0.2em;
+    overflow-y: hidden;
 }
 
 .card-title {
@@ -250,4 +249,12 @@
     #tituloindex {
         font-size: 3rem;
     }
+}
+
+@media (max-width: 500px) {
+
+    .index__titulo__aparts--grande {
+        font-size: 3rem;
+    }
+
 }
