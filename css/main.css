@@ -42,9 +42,6 @@ header .barra {
 #contacto, #complejo {
   border-right: none; }
 
-.contenedor-imagen-nav {
-  position: relative; }
-
 #letra__piray {
   height: 120px;
   width: 120px;
@@ -176,7 +173,7 @@ a {
   text-decoration: none; }
 
 a:hover, a:focus {
-  color: #1e858e;
+  color: #cf74f0;
   text-decoration: underline; }
 
 a:focus,
@@ -187,8 +184,7 @@ a:focus,
   border: 1px solid #ddd; }
 
 #facebook, #instagram {
-  font-size: 21;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  font-size: 3rem; }
 
 /*-----------------------
   ----- Typo Styles ------
@@ -244,7 +240,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #fff;
   font-size: 21px;
   font-weight: 300;
-  background: #1e858e;
+  background: #cf74f0;
   outline: none !important;
   border-radius: 0;
   transition: opacity .2s ease-out; }
@@ -300,7 +296,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding-left: 64px;
   -webkit-transition: border-color .3s ease-out;
   transition: border-color .3s ease-out;
-  border-radius: 2px; }
+  border-radius: 2px;
+  color: #6f22d6; }
 
 #contact-form .form-group {
   position: relative; }
@@ -317,10 +314,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-align: center;
   font-weight: 300;
   opacity: 0.5;
-  transition: opacity .2s ease-out; }
+  transition: opacity .2s ease-out;
+  color: #6f22d6; }
 
 #contact-form.no-placeholder .form-group [class*=fa] {
   top: 30px; }
+
+.form-group input::placeholder {
+  color: #6f22d6; }
+
+.form-group textarea::placeholder {
+  color: #6f22d6; }
 
 #contact-form .form-control:focus + [class*=fa] {
   opacity: 1; }
@@ -331,7 +335,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   min-width: 100%;
   font-size: 21px;
   line-height: 32px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  color: #6f22d6; }
 
 #contact-form .form-control:focus {
   background: #fff;
@@ -361,10 +366,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   ----- Footer Styles ----
   ------------------------*/
 #main-footer {
-  background: white;
+  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
   padding-top: 30px;
   position: relative;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  color: white; }
 
 #main-footer p a {
   padding-bottom: 40px;
@@ -396,19 +402,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   height: 80px;
   line-height: 80px;
   text-align: center;
-  background: #6f22d6;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out; }
 
 .social-links li a:hover {
-  color: white;
-  background: #3f08ae; }
+  color: #0CECDD; }
 
 .aparts li {
   display: inline;
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding: 0 20px;
   text-transform: uppercase; }
+  .aparts li a {
+    color: white; }
+    .aparts li a::hover {
+      color: #0CECDD; }
 
 body::-webkit-scrollbar {
   width: 9px; }
@@ -564,12 +572,28 @@ ul.destacadas li {
   left: 20%;
   line-height: 1.2rem;
   font-size: 1.5rem;
-  color: black;
+  color: #0CECDD;
   border-radius: 10px;
   width: 60%;
-  background: #FFEB3B !important;
-  text-decoration: none; }
+  background: #6f22d6 !important;
+  text-decoration: none;
+  border: none; }
   .btn__index__servicios:hover {
+    background: #0CECDD !important;
+    color: #6f22d6;
+    transition: 1s ease; }
+
+.btn__index__servicios2 {
+  left: 20%;
+  line-height: 1.2rem;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 10px;
+  width: 60%;
+  background: #cf74f0 !important;
+  text-decoration: none;
+  border: none; }
+  .btn__index__servicios2:hover {
     background: #0CECDD !important;
     color: #6f22d6;
     transition: 1s ease; }
@@ -825,11 +849,12 @@ img {
   margin: 15px auto;
   text-align: center;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #000;
   padding: 5px;
   border-radius: 50%;
-  line-height: 15px; }
+  line-height: 15px;
+  overflow-y: hidden; }
 
 .texto__complejo {
   position: relative;
@@ -855,3 +880,6 @@ img {
   text-align: center;
   text-shadow: black 0.1em 0.1em 0.2em;
   margin: 20px 20px; }
+
+#contacto__top {
+  margin-top: 130px; }

@@ -72,11 +72,30 @@
     left: 20%;
     line-height: 1.2rem;
     font-size: 1.5rem;
-    color: black;
+    color: $colorbtnhover;
     border-radius: 10px;    
     width: 60%;
-    background: $clrbtn !important;
+    background: $clrbtntxthover !important;
     text-decoration: none;
+    border: none;
+
+    &:hover {
+        background: $colorbtnhover !important;
+        color: $clrbtntxthover;
+        transition: 1s ease;
+    }
+}
+
+.btn__index__servicios2 {
+    left: 20%;
+    line-height: 1.2rem;
+    font-size: 1.5rem;
+    color: $clrtxtbtnform;
+    border-radius: 10px;    
+    width: 60%;
+    background: $clrbotonenviar !important;
+    text-decoration: none;
+    border: none;
 
     &:hover {
         background: $colorbtnhover !important;

@@ -40,3 +40,10 @@ Nuevas secciones servicios
 
 Nuevo estilo de servicios
 Correccion formatos mobile
+
+--------  Version 0.9  --------
+
+Nuevo Estilo Footer
+Creacion Contacto.html
+Contenido
+Nuevos colores
