@@ -48,7 +48,7 @@ Creacion Contacto.html
 Contenido
 Nuevos colores
 
---------  Version 0.9  --------
+--------  Version 0.10  --------
 
 Nuevo Navbar
 Nuevos botones
