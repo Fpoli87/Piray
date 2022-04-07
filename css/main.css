@@ -22,7 +22,7 @@ header .barra {
   header .barra a img {
     display: inline; }
   header .barra ul {
-    text-align: center;
+    text-align: right;
     margin-top: 15px; }
     header .barra ul li {
       display: inline-block; }
@@ -30,27 +30,40 @@ header .barra {
     height: 80px; }
     header .barra .header__navmenu li a {
       color: white;
-      font-size: 3rem;
+      font-size: 2rem;
       padding: 7px 13px;
-      font-family: 'Imperial Script', cursive;
+      font-family: serif;
       opacity: 1;
       border-right: 3px solid #cf74f0; }
       header .barra .header__navmenu li a:hover {
-        color: #6f22d6;
+        color: #cf74f0;
         transition: 0.5s; }
 
 #contacto, #complejo {
   border-right: none; }
 
 #letra__piray {
-  height: 120px;
-  width: 120px;
-  background: linear-gradient(#0b010f, #3f065a);
+  height: 60px;
+  width: 70px;
   margin-bottom: 20px;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   position: relative;
-  z-index: 99999; }
+  z-index: 99999;
+  vertical-align: top; }
+
+#letra__piray2 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 200px;
+  height: 75px; }
+
+#letra__piray3 {
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 75px; }
 
 .toggle-button {
   float: right;
@@ -63,9 +76,15 @@ header .barra {
 #abrir-cerrar {
   display: none; }
 
+@media (max-width: 870px) {
+  .header__navmenu li a {
+    font-size: 1.8rem !important; } }
+
 @media (max-width: 850px) {
   .toggle-button {
     display: block; }
+  .barra ul {
+    text-align: center !important; }
   .header__navmenu {
     position: fixed;
     width: 100%;
@@ -81,6 +100,14 @@ header .barra {
     flex-direction: column;
     margin: 10px 0;
     line-height: 30px; }
+  #letra__piray2 {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    margin-left: 50px;
+    width: 150px;
+    height: 65px;
+    display: block; }
   .active__menu {
     border-bottom: 3px solid #6f22d6; }
   #inicio, #nosotros, #complejo, #contacto {
@@ -153,6 +180,14 @@ header .barra {
     display: flex;
     flex-direction: column; } }
 
+@media (max-width: 370px) {
+  #letra__piray2 {
+    margin-left: 0; } }
+
+@media (max-width: 270px) {
+  #letra__piray2 {
+    left: 15px; } }
+
 section {
   margin-top: 40px; }
 
@@ -174,7 +209,7 @@ a {
 
 a:hover, a:focus {
   color: #cf74f0;
-  text-decoration: underline; }
+  text-decoration: none; }
 
 a:focus,
 .btn:focus {
@@ -415,8 +450,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-transform: uppercase; }
   .aparts li a {
     color: white; }
-    .aparts li a::hover {
-      color: #0CECDD; }
+    .aparts li a:hover {
+      color: #0CECDD !important; }
+
+@media (max-width: 1200px) {
+  #contactanos {
+    font-size: 3.5rem; } }
+
+@media (max-width: 991px) {
+  #contactanos {
+    font-size: 4rem; } }
 
 body::-webkit-scrollbar {
   width: 9px; }
@@ -432,12 +475,19 @@ body::-webkit-scrollbar-thumb {
 
 .services-svg {
   height: auto;
-  width: 50px; }
+  width: 40px; }
 
 .services-svg2 {
   height: auto;
   width: 35px;
   margin: 0 auto; }
+
+.servicios-aparts h4 {
+  font-size: 1rem; }
+
+.descripcion__iconos2 {
+  font-size: 1.2rem !important;
+  margin-bottom: 0; }
 
 .contenedor-servicios {
   display: grid;
@@ -485,7 +535,7 @@ ul.destacadas li {
   font-size: 1rem; }
 
 #temporada {
-  font-size: 1.3rem; }
+  font-size: 1rem; }
 
 #temporada2 {
   font-size: 1rem; }
@@ -533,13 +583,31 @@ ul.destacadas li {
   top: 40%;
   left: 40%;
   transform: translate(-50%, -50%);
-  text-shadow: black 0.1em 0.1em 0.2em; }
+  text-shadow: black 0.1em 0.1em 0.2em;
+  padding-right: 20px; }
+
+#titulopreindex {
+  text-shadow: black 0.1em 0.1em 0.2em;
+  text-align: center;
+  margin-right: 20px;
+  padding-right: 20px;
+  margin-bottom: 1rem; }
 
 #tituloindex {
   text-transform: uppercase;
   text-shadow: black 0.1em 0.1em 0.2em;
-  text-align: right;
-  margin-right: 20px; }
+  text-align: center;
+  margin-right: 20px;
+  padding-right: 20px;
+  margin-bottom: 0px; }
+
+#titulosubindex {
+  text-transform: uppercase;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  text-align: center;
+  margin-right: 20px;
+  padding-right: 20px;
+  font-size: 2.2rem; }
 
 #imglogoloto {
   height: 480px;
@@ -572,10 +640,9 @@ ul.destacadas li {
   left: 20%;
   line-height: 1.2rem;
   font-size: 1.5rem;
-  color: #0CECDD;
-  border-radius: 10px;
-  width: 60%;
-  background: #6f22d6 !important;
+  color: white;
+  width: 50%;
+  background: #3b0653 !important;
   text-decoration: none;
   border: none; }
   .btn__index__servicios:hover {
@@ -666,7 +733,8 @@ ul.destacadas li {
 .index__titulo__aparts--grande {
   font-size: 4rem;
   text-shadow: black 0.1em 0.1em 0.2em;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  height: 150px; }
 
 .card-title {
   font-size: 2.5rem !important;
@@ -860,7 +928,7 @@ img {
   position: relative;
   font-size: 1.5rem;
   text-align: center;
-  padding: 20px; }
+  font-family: Helvetica; }
 
 @media (max-width: 430px) {
   .imagen img {
@@ -883,3 +951,6 @@ img {
 
 #contacto__top {
   margin-top: 130px; }
+
+#galeria__complejo {
+  margin-top: 40px !important; }

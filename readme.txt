@@ -47,3 +47,11 @@ Nuevo Estilo Footer
 Creacion Contacto.html
 Contenido
 Nuevos colores
+
+--------  Version 0.9  --------
+
+Nuevo Navbar
+Nuevos botones
+Nuevos colores
+Cambios en listas de servicios
+Contenido en index.html y complejo.html

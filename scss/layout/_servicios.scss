@@ -5,7 +5,7 @@
 
 .services-svg {
     height: auto;
-    width: 50px;
+    width: 40px;
 }
 
 .services-svg2 {
@@ -13,6 +13,18 @@
     width: 35px;
     margin: 0 auto;
     
+}
+
+.servicios-aparts{
+    h4{
+        font-size: 1rem;
+    }
+    
+}
+
+.descripcion__iconos2 {
+    font-size: 1.2rem !important;
+    margin-bottom: 0;
 }
 
 .contenedor-servicios {
@@ -73,7 +85,7 @@ ul.destacadas li {
 }
 
 #temporada {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 #temporada2 {

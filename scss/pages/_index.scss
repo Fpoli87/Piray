@@ -20,14 +20,38 @@
     left: 40%;
     transform: translate(-50%, -50%);
     text-shadow: black 0.1em 0.1em 0.2em;
+    padding-right: 20px;
+}
+
+
+#titulopreindex {    
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+    margin-right: 20px;
+    padding-right: 20px;
+    margin-bottom: 1rem;
+    
 }
 
 #tituloindex {
 
     text-transform: uppercase;
     text-shadow: black 0.1em 0.1em 0.2em;
-    text-align: right;
+    text-align: center;
     margin-right: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    
+}
+
+#titulosubindex {
+
+    text-transform: uppercase;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+    margin-right: 20px;
+    padding-right: 20px;
+    font-size: 2.2rem;
     
 }
 
@@ -35,6 +59,8 @@
     height: 480px;
     width: auto;
 }
+
+
 
 .titulo__principal__index {
     position: relative;
@@ -72,10 +98,10 @@
     left: 20%;
     line-height: 1.2rem;
     font-size: 1.5rem;
-    color: $colorbtnhover;
-    border-radius: 10px;    
-    width: 60%;
-    background: $clrbtntxthover !important;
+    color: $clrtxtserv2;
+       
+    width: 50%;
+    background: $clrbtn !important;
     text-decoration: none;
     border: none;
 
@@ -198,6 +224,7 @@
     font-size: 4rem;
     text-shadow: black 0.1em 0.1em 0.2em;
     overflow-y: hidden;
+    height: 150px;
 }
 
 .card-title {
