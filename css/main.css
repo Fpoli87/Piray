@@ -461,6 +461,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   #contactanos {
     font-size: 4rem; } }
 
+@media (max-width: 540px) {
+  #contactanos {
+    font-size: 3.5rem; } }
+
+@media (max-width: 450px) {
+  #contactanos {
+    font-size: 3.2rem; } }
+
+@media (max-width: 400px) {
+  #contactanos {
+    font-size: 2.5rem; } }
+
+@media (max-width: 320px) {
+  #contactanos {
+    font-size: 2rem; } }
+
 body::-webkit-scrollbar {
   width: 9px; }
 
