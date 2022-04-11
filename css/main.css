@@ -199,6 +199,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   background: white; }
+  body::before {
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-image: url("../../img/Logo/loto-solo6.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.1; }
 
 /*-----------------------
 ----- Basic Styles -----
@@ -813,7 +826,7 @@ img {
   text-align: center;
   padding-top: 2.5rem;
   padding-bottom: 15px;
-  margin-top: 100px;
+  margin-top: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-decoration: underline;
@@ -823,12 +836,15 @@ img {
   color: black;
   text-shadow: black 0.1em 0.1em 0.2em; }
 
+.titulo-activo {
+  margin-top: 80px; }
+
 .gallery {
   width: 85%;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 100px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 133px);
   grid-auto-rows: 200px;

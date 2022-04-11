@@ -59,3 +59,10 @@ Contenido en index.html y complejo.html
 --------  Version 0.11  --------
 
 Optimizacion imagenes
+
+--------  Version 0.12  --------
+
+Botones
+Contenido en cada apart
+Fondo
+
